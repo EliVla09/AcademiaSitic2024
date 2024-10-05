@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio
+namespace Exercises
 {
-    internal class ErrorHandler
+    class ErrorHandler
     {
         #region Properties
         private static List<User> UserList { get; set; } = GetUsers();
@@ -18,7 +17,7 @@ namespace Ejercicio
         private const int MAX_AGE = 100;
         #endregion
 
-        #region classes
+        #region Classes
         public class User
         {
             #region Properties
@@ -29,12 +28,14 @@ namespace Ejercicio
 
             #region Constructors
             public User() { }
+
             public User(int userId, string userName, string password)
             {
                 UserId = userId;
                 Username = userName;
                 Password = password;
             }
+
             public User(string userName, string password)
             {
                 Username = userName;
@@ -42,61 +43,137 @@ namespace Ejercicio
             }
             #endregion
         }
+
+        public class CustomAppException : Exception
+        {
+            private eErrorType ErrorResponseEx { get;set; }= eErrorType.Ninguno;
+
+            public CustomAppException() : base() { }
+
+            public CustomAppException(string message, eErrorType type) : base(message)
+            {
+                ErrorResponseEx = type;
+            }
+        }
+
+        public enum eErrorType
+        {
+            Ninguno = 0,
+            Validacion, 
+            Conexion,
+            InformacionDuplicada,
+            Autenticacion,
+            Desconocido = 99
+        }
         #endregion
 
         private static List<User> GetUsers()
         {
             return new()
             {
-                new (1, "admin", "admin"),
-                new(2,  "sa", "12345"),
-                new(3, "john doe", "123"),
-                new(4, "admin", "admin"),
+                new(1, "admin", "admin"),
+                new(2, "sa", "12345"),
+                new(3, "johndoe", "contrasena"),
+                new(4, "miguel94", "19940707")
             };
-
         }
+
         public static void Main(string[] args)
         {
-            const string UserName = "Eli22";
-            const string Password = "admin";
+            const string username = "Eli";
+            const string password = "admin";
+
+            //RegisterUserWithoutValidations(username, password, "18");
+            RegisterUserWithValidations(username, password, "18");
 
             Console.ReadKey();
         }
 
         public static int RegisterUserWithoutValidations(string username, string password, string ageInput)
         {
-            int userId;
+            int userId,
+                age;
             Console.WriteLine("Conexión a la base de datos");
-            Console.WriteLine("Abrimos Transacción");
+            Console.WriteLine("Abrimos transacción");
 
-            age = Convert.ToInt32(ageInpt);
+            age = Convert.ToInt32(ageInput);
+
             Console.WriteLine("Ejecutamos acciones en la base de datos");
 
-            if (!IsExistingUser(username)) { 
-            InsertUser(new(username, password));
-            }
+            if (!IsExistingUser(username))
+                InsertUser(new(username, password));
 
-            return userId;
+            Console.WriteLine("Confirmo los cambios");
+
+            return 0;
+        }
+
+        public static void RegisterUserWithValidations(string username, string password, string ageInput)
+        {
+            Console.WriteLine("Iniciamos el proceso de rgistro de lcientes");
+
+            try
+            {
+                Console.WriteLine("Abrimos transaccion");
+                int age = ValidateAge(ageInput);
+
+                Console.WriteLine("Ejecutamos acciones en la base de datos");
+
+                if (!IsExistingUser(username))
+                    InsertUser(new(username, password));
+
+                Console.WriteLine("Confirmo los cambios");
+
+            }
+            catch (CustomAppException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Rollback");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Rollback");
+            }
+        }
+
+        private static int ValidateAge(string ageInput)
+        {
+            if (!int.TryParse(ageInput, out int age))
+                throw new CustomAppException("La edad viene en un formato incorrecto.", eErrorType.Validacion);
+            if (age < MIN_AGE || age > MAX_AGE)
+                throw new CustomAppException($"La edad debe estarv entre los {MIN_AGE} y los {MAX_AGE} años", eErrorType.Validacion);
+            
+            return age;
+            
+
         }
 
         public static bool IsExistingUser(string username)
         {
-            return (UserList?.Any(user => user.Username == username)).GetValueOrDefault();
+            return UserList != null && UserList.Any(user => user.Username == username);
+            //return (UserList?.Any(user => user.Username == username)).GetValueOrDefault();
         }
-        
+
         public static bool InsertUser(User user)
         {
-            user.UserId = UserList != null ?(UserList.Max(user => user.UserId)+1 : 1;
-            if (UserList != null) { 
+            user.UserId = UserList != null ? (UserList.Max(user => user.UserId) + 1) : 1;
+
+            if (UserList == null)
+                UserList = new();
+
             UserList.Add(user);
-            }
+
+            #region Comment
+            //if (UserList != null)
+            //    UserList.Add(user);
             //else
             //{
             //    UserList = new();
             //    UserList.Add(user);
-            //}
-            UserList.Add(user);
-            Console.WriteLine("Accion ejecutada en base de datos => usuario insertao");
+            //} 
+            #endregion
+
+            Console.WriteLine("Acción ejecutada en base de datos => Usuario insertado correctamente");
             return true;
         }
     }
