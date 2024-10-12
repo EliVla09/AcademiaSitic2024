@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|c:\\users\\elizabeth\\onedrive\\escritorio\\academiasitic\\academiasitic2024\\ejercicio\\ejercicio\\errorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|solutionrelative:ejercicio\\errorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|c:\\users\\elizabeth\\onedrive\\escritorio\\academiasitic\\academiasitic2024\\ejercicio\\ejercicio\\listlinq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|solutionrelative:ejercicio\\listlinq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|c:\\users\\elizabeth\\onedrive\\escritorio\\academiasitic\\academiasitic2024\\ejercicio\\ejercicio\\methods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|solutionrelative:ejercicio\\methods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|c:\\users\\elizabeth\\onedrive\\escritorio\\academiasitic\\academiasitic2024\\ejercicio\\ejercicio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E1A015-710F-4BEA-9322-FDC765F1D442}|Ejercicio\\Ejercicio.csproj|solutionrelative:ejercicio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\ErrorHandler.cs",
+              "RelativeDocumentMoniker": "Ejercicio\\ErrorHandler.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\ErrorHandler.cs",
+              "RelativeToolTip": "Ejercicio\\ErrorHandler.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAawHAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T19:23:00.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListLINQ.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\ListLINQ.cs",
+              "RelativeDocumentMoniker": "Ejercicio\\ListLINQ.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\ListLINQ.cs",
+              "RelativeToolTip": "Ejercicio\\ListLINQ.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwF0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T16:43:46.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Methods.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\Methods.cs",
+              "RelativeDocumentMoniker": "Ejercicio\\Methods.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\Methods.cs",
+              "RelativeToolTip": "Ejercicio\\Methods.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T19:47:20.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\Program.cs",
+              "RelativeDocumentMoniker": "Ejercicio\\Program.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\OneDrive\\Escritorio\\AcademiaSitic\\AcademiaSitic2024\\Ejercicio\\Ejercicio\\Program.cs",
+              "RelativeToolTip": "Ejercicio\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T18:58:29.796Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

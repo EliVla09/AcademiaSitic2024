@@ -4,76 +4,50 @@ namespace Ejercicio
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int InitialStock = 50;
+            int quantityToAdd = 20;
+            int adddedQuantity;
 
-            string courseNaame = "Academia SITIC";
-            string courseNaame2 = "Academia SITIC 2";
+            UpdateStock(InitialStock, quantityToAdd, out int updatedStock, out adddedQuantity);
+            Console.WriteLine($"Inventario Inicial: { InitialStock}");
+            Console.WriteLine($"Cantidad Agregada: {quantityToAdd}");
+            Console.WriteLine($"Inventario Actualizado: {updatedStock}");
 
-            int studentCount = 28;
+            AdjustStock(ref updatedStock, 10);
+            Console.WriteLine($"Ajuste de Entrada: {updatedStock}");
 
-            bool isStartingNow = true;
-            int? age = null;
+            AdjustStock(ref updatedStock, -20);
+            Console.WriteLine($"Ajuste de Salida: {updatedStock}");
 
-            //1
-            Console.WriteLine(age != null ? age :  0);
+            //lectura de producto
+            //var infoProduct = GetProductInfo("Laptop", 20);
+            (string productName, int stock) = GetProductInfo("Laptop", 20);
+            Console.WriteLine($"Nombre del Producto: { productName}");
+            Console.WriteLine($"Inventario del Producto: {stock}");
 
-            if (age != null)
 
-                Console.WriteLine(age);
-            else
-                Console.WriteLine(0);
-
-            Console.WriteLine(age.GetValueOrDefault(0));
             Console.ReadKey();
-
-         
-
-        }
-        public class User
-        {
-            //private string _name;
-            ////forma corta
-            //public int IdUser { get; set; }
-
-            ////forma media
-            //private string _password;
-            //public string Password
-            //{
-            //    get
-            //    {
-            //        return _password;
-            //    }
-
-            //    set
-            //    {
-            //        _password = value;
-            //    }
-            //}
-
-            ////Forma larga
-            //public string GetName()
-            //{
-            //    return _name;
-            //}
-
-            //public void SetName(string name)
-            //{
-            //    _name = name;
-            //}
-
-            private int _iduser;
-            private string _name;
-            private string _password;
-            
-            public string Password { get => _password; set => _password = value;}
         }
 
-        public class Person
+        public static void UpdateStock(int InitialStock,int quantityToAdd , out int updateStock, out int addedQuantity)
         {
-            public int _PersonId { get; set; }
-            public string Name { get; set; }
+            //tenemo la variable de lo que añadira
+            addedQuantity = quantityToAdd;
+            //sumatoria del inventario inicial más lo añadido
+            updateStock = InitialStock + addedQuantity;
+        }
+
+        public static void AdjustStock(ref int stock, int adjustment)
+        {
+            stock += adjustment;
+        }
+
+        //Ejemplo de Tupla
+        public static (string, int ) GetProductInfo(string productName, int stcok)
+        {
+            return (productName, stcok);
         }
     }
 }

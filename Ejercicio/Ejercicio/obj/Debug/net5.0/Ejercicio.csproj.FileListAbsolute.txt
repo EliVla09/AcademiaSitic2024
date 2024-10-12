@@ -1,0 +1,16 @@
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\bin\Debug\net5.0\Ejercicio.exe
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\bin\Debug\net5.0\Ejercicio.deps.json
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\bin\Debug\net5.0\Ejercicio.runtimeconfig.json
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\bin\Debug\net5.0\Ejercicio.runtimeconfig.dev.json
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\bin\Debug\net5.0\Ejercicio.dll
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\bin\Debug\net5.0\Ejercicio.pdb
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.AssemblyInfoInputs.cache
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.AssemblyInfo.cs
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.csproj.CoreCompileInputs.cache
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.sourcelink.json
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.dll
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\refint\Ejercicio.dll
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.pdb
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\Ejercicio.genruntimeconfig.cache
+C:\Users\Elizabeth\OneDrive\Escritorio\AcademiaSitic\AcademiaSitic2024\Ejercicio\Ejercicio\obj\Debug\net5.0\ref\Ejercicio.dll

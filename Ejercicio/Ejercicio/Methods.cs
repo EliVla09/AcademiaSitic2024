@@ -8,7 +8,7 @@ namespace Ejercicio
 {
     internal class Methods
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             int InitialStock = 50;
             int quantityToAdd = 20;
